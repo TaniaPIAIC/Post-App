@@ -10,8 +10,8 @@ A simple MERN stack application built using React, Node.js, Express, MongoDB, an
 https://post-app-backend-4b0m.onrender.com
 
 ## Frontend Live URL
-post-app-frontend.netlify.app
 
+https://post-app-frontend.netlify.app/
 
 
 ---
