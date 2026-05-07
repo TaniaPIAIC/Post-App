@@ -10,7 +10,7 @@ const CreatePost = () => {
 
         const formData = new FormData(e.target)
 
-        axios.post("http://localhost:3000/create-post",formData )
+        axios.post("https://post-app-backend-4b0m.onrender.com/create-post", formData)
         .then((res)=>{
         
             navigate("/feed")

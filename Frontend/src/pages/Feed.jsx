@@ -12,7 +12,7 @@ const Feed = () => {
   ]);
 
   useEffect(() => {
-    axios.get("http://localhost:3000/posts").then((res) => {
+    axios.get("https://post-app-backend-4b0m.onrender.com/posts").then((res) => {
       setPosts(res.data.posts);
     });
   }, []);
