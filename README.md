@@ -1,55 +1,74 @@
-# 🚀 Post App Backend
+# 🚀 MERN Post App
 
-A simple backend application built using **Node.js, Express, and MongoDB** for creating posts with image upload support.
-
----
-
-## 📡 API Endpoint
-
-### Create Post
-**POST /create-post**
-
-**Body (form-data):**
-- `image` → file  
-- `caption` → text  
+A simple MERN stack application built using React, Node.js, Express, MongoDB, and ImageKit for creating and displaying posts with image upload support.
 
 ---
 
-## 🧪 Testing
+# 🌐 Live Links
+
+## Backend Live URL
+https://post-app-backend-4b0m.onrender.com
+
+## Frontend Live URL
+(Add your frontend deployed link here later)
+
+---
+
+# 📡 API Endpoints
+
+## Create Post
+POST /create-post
+
+Live Endpoint:
+https://post-app-backend-4b0m.onrender.com/create-post
+
+Body (form-data):
+- image → file
+- caption → text
+
+---
+
+## Get All Posts
+GET /posts
+
+Live Endpoint:
+https://post-app-backend-4b0m.onrender.com/posts
+
+---
+
+# 🧪 Testing
 
 You can test APIs using:
 - Postman
+- Browser (/posts endpoint)
 
 ---
 
-## 🔐 Environment Variables
+# ⚙️ Tech Stack
 
-Make sure `.env` is added in `.gitignore` to keep your credentials safe.
+## Frontend
+- React.js
+- Axios
+- CSS
 
-## 📁 Project Structure
-
-```
-post-app/
-│── src/
-│   ├── db/
-│   ├── models/
-│   ├── services/
-│   └── app.js
-│
-│── server.js
-│── package.json
-│── .env
-│── .gitignore
-```
-## 📈 Future Improvements
-
-- Save posts in database  
-- Complete image upload integration  
-- Add authentication (JWT)  
-- Add full CRUD operations (update/delete posts)  
+## Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- Multer
+- ImageKit
 
 ---
 
-##  Author
+# 🔐 Environment Variables
 
-**Tania Tariq**
+Make sure `.env` is added in `.gitignore` to keep credentials secure.
+
+Required variables:
+
+```env
+MONGO_URI=
+IMAGEKIT_PUBLIC_KEY=
+IMAGEKIT_PRIVATE_KEY=
+IMAGEKIT_URL_ENDPOINT=
